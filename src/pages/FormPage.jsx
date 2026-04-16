@@ -8,6 +8,7 @@ const ENTITIES = [
 ]
 
 export default function FormPage() {
+  document.title = 'Book Request — EDGE Library'  
   const [form, setForm]       = useState({ employeeName: '', employeeId: '', entity: '' })
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(null)

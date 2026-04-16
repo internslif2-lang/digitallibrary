@@ -4,6 +4,7 @@ import { db } from '../firebase.js'
 import { Link } from 'react-router-dom'
 
 export default function AdminPage() {
+  document.title = 'Admin — EDGE Library'  
   const [records, setRecords] = useState([])
   const [loading, setLoading] = useState(true)
   const [filter, setFilter]   = useState('all')
