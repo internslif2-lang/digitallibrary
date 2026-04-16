@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey:            "AIzaSyDRQs_yMFfb61oago_JsV_wvt9yQxqzY5E",
-  authDomain:        "digitallibrary-cdde4.firebaseapp.com",
-  projectId:         "digitallibrary-cdde4",
-  storageBucket:     "digitallibrary-cdde4.firebasestorage.app",
-  messagingSenderId: "584471023343",
-  appId:             "1:584471023343:web:1690a97938aa83dd56d51a"
+  apiKey:            import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain:        import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:         import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:     import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId:             import.meta.env.VITE_FIREBASE_APP_ID,
 }
 
 const app = initializeApp(firebaseConfig)
